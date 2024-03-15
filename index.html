@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Linux</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <section class="hero image-as-background" style="background-image: url('LINUX.jpg');">
+        <div class="hero-container">
+            <p class="animate fadeInLeft delay-400">Antoine Salles</p>
+            <h1 class="hero-title animate fadeInLeft delay-600">Linux</h1>
+            <a href="linus_torvalds.html" class="hero-button animate fadeInLeft delay-800" title="Cliquer pour voir plus">Linus Torvalds</a>
+        </div>
+    </section>
+    <section class="main-content">
+        <h2>Vous avez déjà entendu parler de Linux ? </h2>
+        <br>
+        <p>
+            Mais si ! Linux c'est un système d'exploitation libre et open source développé par
+            <a class="highlight" href="linus_torvalds.html"><span>Linus Torvalds</span></a> au début des années 90. Il s'agit d'un noyau de système d'exploitation, la partie fondamentale qui interagit directement avec le matériel de l'ordinateur, tandis
+            que les distributions Linux comprennent également des logiciels et des outils supplémentaires pour en faire un système d'exploitation complet. Le succès de Linux repose sur son modèle de développement collaboratif et ouvert, qui permet à des
+            milliers de programmeurs à travers le monde de contribuer à son amélioration continue.
+
+        </p>
+        <img id="myImg" src="linus_torvalds.jpg" alt="Linus Torvalds" width="330" height="200">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <style>
+            #myImg {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+                float: right;
+            }
+            
+            #myImg:hover {
+                opacity: 0.7;
+            }
+            /* The Modal (background) */
+            
+            .modal {
+                display: none;
+                /* Hidden by default */
+                position: fixed;
+                /* Stay in place */
+                z-index: 1;
+                /* Sit on top */
+                padding-top: 100px;
+                /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%;
+                /* Full width */
+                height: 100%;
+                /* Full height */
+                overflow: auto;
+                /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0);
+                /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.9);
+                /* Black w/ opacity */
+            }
+            /* Modal Content (image) */
+            
+            .modal-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+            /* Caption of Modal Image */
+            
+            #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+            /* Add Animation */
+            
+            .modal-content,
+            #caption {
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+            
+            @keyframes zoom {
+                from {
+                    transform: scale(0.1)
+                }
+                to {
+                    transform: scale(1)
+                }
+            }
+            /* The Close Button */
+            
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            /* 100% Image Width on Smaller Screens */
+            
+            @media only screen and (max-width: 700px) {
+                .modal-content {
+                    width: 100%;
+                }
+            }
+        </style>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+        <p>
+            Linux est largement utilisé dans divers domaines, des serveurs Web et des supercalculateurs aux smartphones et aux appareils embarqués. Sa stabilité, sa fiabilité et sa flexibilité en font un choix populaire pour de nombreux cas d'utilisation. Les distributions
+            Linux les plus populaires incluent Ubuntu, Fedora, Debian, CentOS, et Arch Linux, chacune offrant une expérience utilisateur unique et adaptée à différents besoins.
+        </p>
+        <p>
+            Le noyau Linux est distribué sous les termes de la licence publique générale GNU (GPL), ce qui signifie qu'il est disponible gratuitement, et que son code source peut être étudié, modifié et redistribué par quiconque. Cette liberté a encouragé l'innovation
+            et la création de nombreuses distributions Linux personnalisées et spécialisées, adaptées à des besoins spécifiques.
+        </p>
+        <p>
+            Linux a également joué un rôle majeur dans le mouvement open source, encourageant la collaboration et le partage de code entre les développeurs du monde entier. Des entreprises comme IBM, Red Hat, Canonical, et Google ont contribué au développement de
+            Linux et ont utilisé ce système d'exploitation dans leurs produits et services.
+        </p>
+        <p>
+            La popularité croissante de Linux a conduit à une adoption plus large dans l'industrie, avec de nombreuses entreprises choisissant des solutions basées sur Linux pour leurs infrastructures informatiques. Les avantages de Linux en termes de coût, de performance
+            et de sécurité en ont fait un choix attrayant pour les entreprises de toutes tailles.
+        </p>
+        <p>
+            Les distributions Linux sont également utilisées dans l'éducation, les gouvernements, et les organisations à but non lucratif, offrant des alternatives économiques et puissantes aux systèmes d'exploitation propriétaires. Linux est également couramment
+            utilisé dans les environnements de cloud computing, où sa flexibilité et sa modularité permettent de créer des infrastructures hautement personnalisées et évolutives.
+        </p>
+        <p>
+            La communauté Linux est dynamique et diversifiée, avec des milliers de développeurs et d'utilisateurs actifs contribuant à son développement et à sa promotion. Des événements tels que les conférences LinuxCon et les rencontres des utilisateurs de distributions
+            spécifiques rassemblent régulièrement la communauté pour discuter des dernières avancées et partager leurs connaissances.
+        </p>
+        <p>
+            Sur le plan technique, le noyau Linux prend en charge une large gamme d'architectures matérielles, y compris les processeurs x86, ARM, et PowerPC, ainsi que des fonctionnalités avancées telles que la virtualisation, le système de fichiers ext4, et la
+            gestion des conteneurs Docker.
+        </p>
+        <p>
+            Linux est également reconnu pour sa robustesse et sa sécurité, avec des mécanismes de contrôle d'accès avancés, des mises à jour régulières de sécurité, et un écosystème de logiciels antivirus et de pare-feu pour protéger les systèmes contre les menaces
+            en ligne.
+        </p>
+        <p>
+            Le développement du noyau Linux est coordonné par Linus Torvalds et une équipe de mainteneurs qui gèrent les différentes parties du code source. Les contributions sont soumises sous forme de correctifs via le système de gestion de versions Git, et sont
+            examinées et intégrées dans le noyau principal après avoir été testées et validées par les mainteneurs.
+        </p>
+        <p>
+            Linux continue d'évoluer et de s'adapter aux besoins changeants de l'industrie informatique, avec des mises à jour régulières ajoutant de nouvelles fonctionnalités, améliorant les performances, et renforçant la sécurité. Des efforts sont également en
+            cours pour rendre Linux plus convivial pour les utilisateurs finaux, en simplifiant l'installation et la configuration et en améliorant l'expérience utilisateur.
+        </p>
+        <p>
+            En résumé, Linux est bien plus qu'un simple système d'exploitation ; c'est un mouvement mondial qui incarne les valeurs de l'open source et de la collaboration. Son impact sur l'industrie informatique et la société dans son ensemble est profond et durable,
+            et sa pertinence ne cesse de croître à mesure que de plus en plus de personnes découvrent les avantages de ce système d'exploitation libre et puissant.
+        </p>
+        </div>
+    </section>
+    <div class="footer-dark">
+        <footer>
+            <div class="footer">
+                <h3>Antoine SALLES</h3>
+                <div class="name">Seconde E</div>
+                <p class="copyright">Les Francs Bourgeois La Salle © 2024</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
